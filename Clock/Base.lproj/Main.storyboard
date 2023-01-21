@@ -68,7 +68,6 @@
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </backgroundConfiguration>
-                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REl-Vc-Ydg"/>
@@ -112,6 +111,7 @@
                         <outlet property="backgroundImage" destination="c9Y-Zh-hby" id="aBq-0N-6aU"/>
                         <outlet property="datePicker" destination="gdl-Yu-CP5" id="Vf1-z7-muh"/>
                         <outlet property="dateTime" destination="yvh-L7-2VD" id="i4Z-Et-Xf0"/>
+                        <outlet property="startStopButton" destination="WZ9-Ie-Lal" id="NhI-HP-mDt"/>
                         <outlet property="timeRemainingLabel" destination="NwZ-j9-A51" id="fDR-ux-euC"/>
                     </connections>
                 </viewController>
