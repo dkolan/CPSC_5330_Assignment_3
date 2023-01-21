@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         datePicker.setValue(UIColor.white, forKeyPath: "textColor")
-        datePicker.setValue(UIColor.lightGray.withAlphaComponent(0.25), forKey: "backgroundColor")
+//        datePicker.setValue(UIColor.black.withAlphaComponent(0.1), forKey: "backgroundColor")
     }
 
 
