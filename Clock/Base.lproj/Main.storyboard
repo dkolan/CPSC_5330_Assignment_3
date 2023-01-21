@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nighttimeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="19J-pY-ezH">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daytimeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-5L-SNq">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9Y-Zh-hby" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oef-Jo-c7R">
-                                <rect key="frame" x="0.0" y="59" width="852" height="300"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELB-0f-rge" userLabel="Top">
-                                        <rect key="frame" x="0.0" y="0.0" width="852" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed, 28 Dec 2022 14:59:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvh-L7-2VD">
-                                                <rect key="frame" x="268.33333333333337" y="35.333333333333329" width="315.33333333333337" height="29.666666666666671"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvh-L7-2VD">
+                                                <rect key="frame" x="196.66666666666666" y="126.66666666666666" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -44,10 +41,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCX-LN-THa" userLabel="Center">
-                                        <rect key="frame" x="0.0" y="100" width="852" height="100"/>
+                                        <rect key="frame" x="0.0" y="253" width="393" height="253"/>
                                         <subviews>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-Yu-CP5">
-                                                <rect key="frame" x="266" y="-31" width="320" height="162"/>
+                                                <rect key="frame" x="36.666666666666657" y="18.666666666666686" width="320" height="216"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </datePicker>
                                         </subviews>
@@ -59,23 +56,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g21-oC-LNA" userLabel="Bottom">
-                                        <rect key="frame" x="0.0" y="200" width="852" height="100"/>
+                                        <rect key="frame" x="0.0" y="506" width="393" height="253"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-QW-vSn">
-                                                <rect key="frame" x="280.66666666666669" y="5.6666666666666856" width="291.00000000000006" height="88.666666666666671"/>
+                                                <rect key="frame" x="51" y="82.333333333333371" width="291" height="88.666666666666686"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ9-Ie-Lal">
-                                                        <rect key="frame" x="41.666666666666615" y="0.0" width="207.66666666666663" height="34.333333333333336"/>
+                                                        <rect key="frame" x="41.666666666666671" y="0.0" width="207.66666666666663" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Start Timer / Stop Music">
                                                             <backgroundConfiguration key="background">
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </backgroundConfiguration>
-                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REl-Vc-Ydg"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 00:10:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-j9-A51">
-                                                        <rect key="frame" x="0.0" y="54.333333333333314" width="291" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="54.333333333333258" width="291" height="34.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -98,22 +97,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="19J-pY-ezH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="5as-JG-1Ct"/>
+                            <constraint firstItem="c9Y-Zh-hby" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="5TG-xk-5I6"/>
                             <constraint firstItem="oef-Jo-c7R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Cf-h3-T2R"/>
+                            <constraint firstItem="c9Y-Zh-hby" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ABL-rw-9Yl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oef-Jo-c7R" secondAttribute="trailing" id="AOl-zh-oTK"/>
-                            <constraint firstItem="4xp-5L-SNq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MkT-fA-DbR"/>
-                            <constraint firstItem="19J-pY-ezH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ncu-sW-5R4"/>
-                            <constraint firstItem="4xp-5L-SNq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="O19-j3-N9d"/>
-                            <constraint firstAttribute="bottom" secondItem="19J-pY-ezH" secondAttribute="bottom" id="O5P-pv-eQq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oef-Jo-c7R" secondAttribute="bottom" id="R5r-1c-fQn"/>
-                            <constraint firstAttribute="bottom" secondItem="4xp-5L-SNq" secondAttribute="bottom" id="Yj1-gu-Wc2"/>
-                            <constraint firstItem="4xp-5L-SNq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mTQ-Gh-chv"/>
-                            <constraint firstItem="19J-pY-ezH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wMe-Ra-aCK"/>
+                            <constraint firstItem="c9Y-Zh-hby" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iQd-bz-sai"/>
+                            <constraint firstAttribute="bottom" secondItem="c9Y-Zh-hby" secondAttribute="bottom" id="kYj-l4-ivV"/>
                             <constraint firstItem="oef-Jo-c7R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yec-3k-elq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="c9Y-Zh-hby" id="aBq-0N-6aU"/>
                         <outlet property="datePicker" destination="gdl-Yu-CP5" id="Vf1-z7-muh"/>
+                        <outlet property="dateTime" destination="yvh-L7-2VD" id="i4Z-Et-Xf0"/>
+                        <outlet property="startStopButton" destination="WZ9-Ie-Lal" id="NhI-HP-mDt"/>
+                        <outlet property="timeRemainingLabel" destination="NwZ-j9-A51" id="fDR-ux-euC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,8 +121,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="daytimeBackground" width="233.33332824707031" height="414.66665649414062"/>
-        <image name="nighttimeBackground" width="233.33332824707031" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
